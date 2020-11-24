@@ -58,8 +58,19 @@
       };
     }
 
-    const sliderImages = document.querySelectAll('.slide-in'); // select all the images. they all have a class of slide-in
-    
+    // select all the images. they all have a class of slide-in
+    const sliderImages = document.querySelectorAll('.slide-in'); 
+
+    // function to check for slide
+    function checkSlide(e) { 
+        sliderImages.forEach(slideImage => {
+
+        });
+    }
+
+    // when the window is scrolled we want to run slide
+    window.addEventListener('scroll', debounce(checkSlide); 
+
 
   </script>
 
